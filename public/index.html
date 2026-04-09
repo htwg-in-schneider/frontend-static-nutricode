@@ -1,2 +1,141 @@
-<h1>Hallo Welt!</h1>
-<p>Hey Paule, funktioniert das pullen bei dir?</p>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport Meta Tag (Folie 58) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NutriCode – Dein persönlicher Kalorien- & Ernährungsplaner</title>
+  <!-- Google Fonts (externe Ressource, wie externes CSS per link eingebunden, Folie 25) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <!-- Externes Stylesheet (Folie 25) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="container" style="position: relative;">
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">Nutri<span>Code</span></a>
+
+      <!-- Hamburger-Button (nur auf Mobile sichtbar) -->
+      <button class="navbar-toggle" onclick="document.getElementById('nav-links').classList.toggle('navbar-links-open')">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar-links" id="nav-links">
+        <li><a href="#">Startseite</a></li>
+        <li><a href="#">Berechnen</a></li>
+        <li><a href="#" class="navbar-cta">Anmelden</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main class="container">
+    <section class="hero">
+
+      <div class="hero-text">
+        <span class="hero-tag">Ernährungsplanung mit KI</span>
+        <h1 class="hero-heading">
+          Dein <em>Code</em> für<br>gesunde Ernährung.
+        </h1>
+        <p class="hero-sub">
+          NutriCode berechnet deinen individuellen Kalorienbedarf
+          anhand der Mifflin-St&nbsp;Jeor-Formel und erstellt
+          mithilfe von KI einen personalisierten Ernährungsplan.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">Jetzt berechnen →</a>
+          <a href="#features" class="btn btn-outline">Mehr erfahren</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <p class="hero-card-label">Täglicher Bedarf</p>
+          <p class="hero-card-kcal">2.180</p>
+          <p class="hero-card-unit">kcal / Tag</p>
+          <div class="hero-card-divider"></div>
+          <dl class="hero-card-row">
+            <dt>Protein</dt><dd>82 g</dd>
+          </dl>
+          <dl class="hero-card-row">
+            <dt>Kohlenhydrate</dt><dd>260 g</dd>
+          </dl>
+          <dl class="hero-card-row">
+            <dt>Fett</dt><dd>78 g</dd>
+          </dl>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Features</p>
+        <h2 class="section-title">Warum NutriCode?</h2>
+      </div>
+
+      <div class="features-grid">
+
+        <article class="feature-card">
+          <div class="feature-icon">⏱</div>
+          <p class="feature-name">Schnell</p>
+          <p class="feature-desc">Kalorienbedarf in Sekunden berechnet – ganz ohne Anmeldung.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <p class="feature-name">KI-basiert</p>
+          <p class="feature-desc">Ein individueller Ernährungsplan, generiert per KI-Schnittstelle.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">📄</div>
+          <p class="feature-name">PDF Export</p>
+          <p class="feature-desc">Deinen Plan als PDF herunterladen und überall dabei haben.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">✏️</div>
+          <p class="feature-name">Personalisiert</p>
+          <p class="feature-desc">Berücksichtigt Alter, Geschlecht, Gewicht und deine Präferenzen.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">📱</div>
+          <p class="feature-name">Responsiv</p>
+          <p class="feature-desc">Optimiert für Desktop, Tablet und Smartphone.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <p class="feature-name">Sicher</p>
+          <p class="feature-desc">Deine Daten gehören dir – sichere Authentifizierung inklusive.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="cta-heading">Bereit für deinen <em>Ernährungsplan</em>?</h2>
+      <p class="cta-sub">Personalisiert. KI-gestützt. Immer dabei.</p>
+      <a href="#" class="btn btn-primary">Kostenlos starten →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer container">
+    <p>© 2026 NutriCode · Paul Bärenfänger &amp; Leon Mönch · Projektarbeit Webentwicklung SS 2026</p>
+  </footer>
+
+</body>
+</html>
